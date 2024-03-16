@@ -1,0 +1,219 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  font-family: Neucha, sans-serif;
+  max-width: 500px;
+  min-height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #6bc8a3c7;
+  padding: 25px 30px;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  box-shadow:inset 1px 1px 10px #95f4ce, rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  padding: 5px;
+}
+h1{
+  margin: auto;
+}
+.text-add-area {
+  margin: auto;
+}
+.todo-list-area {
+  margin: auto;
+}
+.nothingToDo{
+  margin: 25px 15px;
+}
+.text-add-area,
+.todo-list-area{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#input-text,
+#todo-item-type,
+#button-submit,
+.todoList-item,
+#textarea,
+#empty-area{
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+}
+
+#input-text:hover,
+#todo-item-type:hover,
+#button-submit:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#input-text:focus,
+#todo-item-type:focus,
+#button-submit:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+.todoList-item button{
+  border:none;
+  border-radius: 50% 25% ;
+  background-color: transparent;
+  box-shadow:  #41403e 2px 8px 4px -6px;
+}
+.todoList-item button:active{
+  cursor: pointer;
+  
+  
+}
+#button-submit{
+  border-bottom-left-radius: 35px 255px;
+  border-bottom-right-radius: 225px 35px;
+  border-top-left-radius: 255px 35px;
+  border-top-right-radius: 35px 225px;
+  background-color: #6bc8a3fc;
+}
+
+#button-submit:active {
+  box-shadow: inset 2px 2px 10px #c0f0dce6;
+}
+
+#rewrite span,
+#done span,
+#close span{
+  pointer-events: none;
+}
+#done:hover {
+  color: #6BC8A3
+}
+#done:active{
+  box-shadow: #6BC8A3  2px 8px 4px -6px;
+}
+#rewrite:hover{
+  color:#FF8D60;
+}
+#rewrite:active{
+ box-shadow: #FF8D60  2px 8px 4px -6px;;
+}
+#close:hover{
+ 
+  color: #d20d0dd1
+}
+#close:active{
+  box-shadow: #d20d0dd1 2px 8px 4px -6px;
+}
+.notes-area {
+  margin: auto;
+  position: relative;
+ 
+}
+.notes-area p{
+  margin-bottom: 0%;
+}
+
+
+.notes-area #textarea{
+  margin-top: 0%;
+  
+}
+
+.text{
+  margin: 5px;
+  padding: 5px;
+}
+
+#textarea{
+  max-width: 400px;
+  max-height: fit-content;
+  box-shadow:inset 1px 1px 10px #95f4ce,  #41403e 2px 8px 4px -6px;
+}
+
+.todoList-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+#empty-area{
+  padding: 45px 55px;
+  border:none;
+  font-size: 26px;
+  letter-spacing: 2px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow:inset #4a866c 1px 1px 2px, #95f4ce 2px 2px 2px;
+}
+
+#empty-area span{
+  font-size: 45px;
+}
+
+#icon{
+  font-size: 25px;
+  padding: 2px;
+  position: absolute;
+  margin: -13px -20px;
+}
+.todo-list-area{
+  box-shadow:inset #4a866c 1px 1px 2px, #95f4ce 2px 2px 2px;
+  border-bottom-left-radius: 35px 255px;
+  border-bottom-right-radius: 225px 35px;
+  border-top-left-radius: 255px 35px;
+  border-top-right-radius: 35px 225px;
+  
+  padding: 15px;
+}
+
+.none{
+  display: none !important;
+}
+
+.text-done{
+  text-decoration: line-through;
+  color: #FF8D60
+}
+
